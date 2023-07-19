@@ -1,0 +1,16 @@
+.authentication{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-size: 100% 100%;
+    background-color: rgb(65, 92, 83);
+}
+.authentication .ant-row{
+    width: 100%;
+    justify-content: center !important;
+}
+
+.authentication form{
+    background-color: white;
+    padding: 20px;
+}
