@@ -14,7 +14,7 @@ function Customers() {
   const getAllBills = () => {
     dispatch({ type: "showLoading" });
     axios
-      .get("https://shop-91xe.onrender.com/api/bills/get-all-bills")
+      .get("https://shop-9e5e.onrender.com/api/bills/get-all-bills")
       .then((response) => {
         dispatch({ type: "hideLoading" });
         const data = response.data

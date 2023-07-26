@@ -11,7 +11,7 @@ function Login() {
   const naviate = useNavigate()
   const onFinish=(values)=>{
     dispatch({type:'showLoading'})
-    axios.post('https://shop-91xe.onrender.com/api/users/login' , values).then((res)=>{
+    axios.post('https://shop-9e5e.onrender.com/api/users/login' , values).then((res)=>{
      dispatch({type:'hideLoading'})
       message.success('Login successfull')
       localStorage.setItem('pos-user' , JSON.stringify(res.data))
@@ -62,3 +62,22 @@ useEffect(() => {
 }
 
 export default Login
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

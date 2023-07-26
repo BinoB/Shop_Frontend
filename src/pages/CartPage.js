@@ -98,7 +98,7 @@ function CartPage() {
     };
 
     axios
-      .post("https://shop-91xe.onrender.com/api/bills/charge-bill", reqObject)
+      .post("https://shop-9e5e.onrender.com/api/bills/charge-bill", reqObject)
       .then(() => {
         message.success("Bill Charged Successfully");
         navigate('/bills')

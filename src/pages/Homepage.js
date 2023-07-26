@@ -31,7 +31,7 @@ function Homepage() {
 
     axios
     
-      .get("https://shop-91xe.onrender.com/api/items/get-all-items")
+      .get("https://shop-9e5e.onrender.com/api/items/get-all-items")
       .then((response) => {
         dispatch({ type: "hideLoading" });
         setItemsData(response.data);

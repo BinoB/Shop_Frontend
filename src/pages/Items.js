@@ -13,7 +13,7 @@ function Items() {
   const getAllItems = () => {
     dispatch({ type: "showLoading" });
     axios
-      .get("https://shop-91xe.onrender.com/api/items/get-all-items")
+      .get("https://shop-9e5e.onrender.com/api/items/get-all-items")
       .then((response) => {
         dispatch({ type: "hideLoading" });
         setItemsData(response.data);
@@ -27,7 +27,7 @@ function Items() {
   const deleteItem = (record) => {
     dispatch({ type: "showLoading" });
     axios
-      .post("https://shop-91xe.onrender.com/api/items/delete-item" , {itemId : record._id})
+      .post("https://shop-9e5e.onrender.com/api/items/delete-item" , {itemId : record._id})
       .then((response) => {
         dispatch({ type: "hideLoading" });
         message.success('Item deleted successdully')
@@ -88,7 +88,7 @@ function Items() {
     if(editingItem===null)
     {
       axios
-      .post("https://shop-91xe.onrender.com/api/items/add-item", values)
+      .post("https://shop-9e5e.onrender.com/api/items/add-item", values)
       .then((response) => {
         dispatch({ type: "hideLoading" });
         message.success("Item added successfully");
@@ -103,7 +103,7 @@ function Items() {
     }
     else{
       axios
-      .post("https://shop-91xe.onrender.com/api/items/edit-item", {...values , itemId : editingItem._id})
+      .post("https://shop-9e5e.onrender.com/api/items/edit-item", {...values , itemId : editingItem._id})
       .then((response) => {
         dispatch({ type: "hideLoading" });
         message.success("Item edited successfully");
